@@ -43,3 +43,14 @@
   "ShutdownOnMapChangeIfPendingUpdate": true
 }
  ```
+
+ ```CN
+{
+//ConfigVersion=版本号
+//UpdateCheckInterval=检查的时间间隔,单位为秒
+//ShutdownDelay=当服务器决定关闭时,延迟多少秒执行
+//MinPlayersInstantShutdown=立即关闭服务器所需要的人数,如果为0,服务器没人就立刻关闭进行更新
+//MinPlayerPercentageShutdownAllowed=允许关闭的玩家比例。当在线玩家人数少于总人数的 60% 时，允许服务器关闭
+//ShutdownOnMapChangeIfPendingUpdate=如果有更新待处理，在地图更换时是否关闭服务器 true为启用
+}
+ ```
