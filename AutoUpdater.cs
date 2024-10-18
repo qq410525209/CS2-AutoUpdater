@@ -76,8 +76,8 @@
 
         private static void OnClientConnected(int playerSlot)
         {
-            CCSPlayerController player = Utilities.GetPlayerFromSlot(playerSlot);
-            if (!player.IsValid || player.IsBot || player.IsHLTV) return;
+            CCSPlayerController? player = Utilities.GetPlayerFromSlot(playerSlot);
+            if (player?.IsValid != true || player.IsBot || player.IsHLTV) return;
 
             PlayersNotified.Add(playerSlot, false);
         }
